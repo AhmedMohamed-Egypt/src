@@ -1,0 +1,53 @@
+
+
+
+
+
+  
+/*center elem*/
+@mixin cntrElmnt() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+}
+%pseduElement{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content:"";
+
+}
+@mixin after(){
+@extend %pseduElement;
+
+}
+@mixin before(){
+  @extend %pseduElement;
+}
+$px:"px";
+
+@mixin max($wdithSize){
+  @media (max-width:($wdithSize+"px")){
+    @content;
+  }
+}
+@mixin min($width){
+  @media (min-width:($width+"px")){
+    @content;
+  }
+}
+
+@mixin between($width1,$width2){
+  @media (min-width:($width1+"px")) and (max-width:($width2+"px")){
+     @content;
+  }
+}
+
+.fadeInUp{animation:fadeInUp 5s ease backwards;}
+@keyframes fadeInUp{
+  0%{transform:translate(0px, 100px); opacity: 0;}
+  100%{transform:translate(0px, 0); opacity: 1;}
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Roboto", serif;
+}
+.roboto-font{
+  font-family: "Roboto", serif;
+}
+.h2-heading{
+  font-family: "Roboto", serif;
+  font-size: 48px;
+  font-weight: 600;
+  @include max(993){
+    font-size: 38px;
+  }
+  @include max(600){
+    font-size: 35px;
+  }
+}
+
+/*loop font size*/
+@for $i from 1 through 60{
+  .size-#{$i}{
+    font-size: $i+px;
+  }
+}
+@for $i from 1 through 10{
+  .weight-#{$i*100}{
+    font-weight: #{$i*100};
+  }
+}

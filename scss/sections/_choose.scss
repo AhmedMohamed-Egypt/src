@@ -1,0 +1,72 @@
+.choose{
+    padding-top: 100px;
+    &__cards{
+        position: relative;
+        z-index: 99;
+        @for $i from 1 through  4{
+            .row{
+                >div:nth-child(#{$i}){
+                  .choose__cards--card{
+
+                    &::before{
+                        
+                        background: linear-gradient(270deg, rgba(12, 15, 22, .9) 0%, rgba(#0C0F16,1) 53%), url('../images/choose-#{$i}.png'); ;
+                    }
+                  }
+                  &:last-child{
+                    margin-bottom: 0 !important;
+                  }
+                }
+
+            }
+        }
+        &--card{
+            padding-top: 50px;
+            height: 420px;
+            padding-left: 30px;
+   
+            border: 2px solid #11141B;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            @include max(768){
+                
+                height: auto;
+                padding-bottom: 50px;
+             }
+            h2{
+                height: 170px;
+                @include max(768){
+                   font-size: 25px;
+                   height: auto;
+                }
+            }
+            p{
+                @include max(768){
+                    font-size: 18px;
+                }
+                @include max(500){
+                    font-size: 12px;
+                }
+            }
+            &::after{
+                @include after();
+                background-image: linear-gradient(270deg, rgba(12, 15, 22, .3) 0%, rgba(#0C0F16,1) 50%); 
+            }
+            &::before{
+                @include before();
+               
+                background-blend-mode: difference;
+                background-position: right !important;
+                background-repeat: no-repeat !important;
+               
+            }
+
+
+
+
+
+        }
+    }
+}
+

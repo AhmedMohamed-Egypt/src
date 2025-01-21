@@ -1,0 +1,23 @@
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./vars";
+@import "./mixins";
+@import "./typography";
+@import "./_helpers.scss";
+@import "./_btns.scss";
+@import './sections/hero';
+@import './sections/_about.scss';
+@import './sections/_expertise.scss';
+@import './sections/_industries.scss';
+@import './sections/_choose.scss';
+@import './sections/_latestBlog.scss';
+@import './sections/ourlocations';
+@import './sections/hamburgmenu';
+@import './sections/_product.scss';
+@import './sections/_blog.scss';
+@import './sections/drkMode';
+@import './sections/_jsClassess.scss';
+
+

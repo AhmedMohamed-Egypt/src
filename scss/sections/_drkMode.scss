@@ -1,0 +1,142 @@
+body {
+  &.drkMode {
+    background-color: #06070e;
+    .h2-heading {
+      color: #b5b5bd;
+    }
+    p {
+      color: #b5b5bd;
+    }
+
+    .industries p,
+    .ourlocations p {
+      color: #fff;
+    }
+    .about-section__widget::after {
+      background: linear-gradient(90deg, #0c0f16 57%, rgba(12, 15, 22, 0) 75%);
+      @include max(993) {
+        background: linear-gradient(
+          180deg,
+          #0c0f16 70%,
+          rgba(12, 15, 22, 0) 80%
+        );
+      }
+    }
+    .overlay-product-about::before {
+      background: #ffbf00;
+      opacity: 0.08;
+      -webkit-filter: blur(188.6px);
+      filter: blur(188.6px);
+      width: 50%;
+      height: 50%;
+      right: 0;
+      left: auto;
+      background: #ed1a37;
+      opacity: 0.1;
+      filter: blur(188.6px);
+    }
+    .overlay-product-about--pesdu,
+    .overlay-product-about::after {
+      display: none;
+    }
+    .expertise {
+      position: relative;
+      &__slider {
+        position: relative;
+        z-index: 99;
+      }
+      &::after {
+        @include after();
+        background: #a0ac4f;
+        opacity: 0.1;
+        filter: blur(188.6px);
+        width: 25%;
+      }
+    }
+    .choose {
+      position: relative;
+      &::after {
+        @include after();
+        background: #ed1a37;
+        opacity: 0.1;
+        -webkit-filter: blur(188.6px);
+        filter: blur(188.6px);
+        width: 50%;
+        right: 0;
+        left: auto;
+        height: 50%;
+        top: -30%;
+      }
+    }
+    .switch-mode__list--drk {
+      background-color: #000 !important;
+    }
+    .blog-page {
+      h2,
+      h3 {
+        color: #fff;
+      }
+      p {
+        color: #b5b5bd !important;
+      }
+      .blog-section__bookAcall {
+        background-color: #0c0f16;
+      }
+      .blog-section {
+        position: relative;
+        &::after {
+          @include after();
+
+          background: #a0ac4f;
+          opacity: 0.25;
+          -webkit-filter: blur(188.6px);
+          filter: blur(188.6px);
+          bottom: 0;
+          top: auto;
+          width: 25%;
+          height: 15%;
+          z-index: -1;
+          /* left: 0%; */
+        }
+        &::before{
+          @include before();
+          background: #ED1A37;
+         opacity: 0.1;
+
+         filter: blur(188.6px);
+         z-index: -1;
+         width: 25%;
+         left: auto;
+         right: 0;
+         top: 25%;
+         height: 50%;
+
+
+
+
+        }
+      }
+    }
+  }
+  &.lightMode {
+    .switch-mode__list--light {
+      background-color: #000 !important;
+    }
+  }
+  &.auto {
+    button.switch-mode__list--auto {
+      background-color: #000 !important;
+    }
+    button.switch-mode__list--light {
+      background: none !important;
+    }
+    button.switch-mode__list--drk {
+      background: none !important;
+    }
+  }
+}
+
+//background: linear-gradient(90deg, #0C0F16 14.32%, rgba(12, 15, 22, 0) 95.68%);
+/* Ellipse 25 */
+
+/* Ellipse 25 */

@@ -1,0 +1,79 @@
+.blog-page{
+    .hero__nav::after{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 90%)
+    }
+}
+
+
+
+
+
+
+.blog-section{
+    &__redirect{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $scondryBlack;
+        position: relative;
+        svg{
+            @include cntrElmnt();
+        }
+    }
+    &__bookAcall{
+        background-color:#000;
+    
+        padding: 45px 0px;
+        border-radius: 15px;
+   //     padding-left: 50px;
+        button{
+            background-color: $green-700;
+            border-radius: 6px;
+            padding: 8px 44px;
+        }
+        h3{
+            @include max(1024){
+                font-size: 36px;
+            }
+            @include max(993){
+                font-size: 32px;
+            }
+    
+            @include max(768){
+                font-size: 30px;
+            } @include max(600){
+                font-size: 24px;
+            }
+        }
+    }
+    &--txt{
+        @include max(1024){
+            font-size: 17px;
+        }
+        @include max(993){
+            font-size: 16px;
+        }
+
+        @include max(768){
+            font-size: 15px;
+        } @include max(600){
+            font-size: 14px;
+        }
+    }
+    &--heading{
+        @include max(1024){
+            font-size: 36px;
+        }
+        @include max(993){
+            font-size: 32px;
+        }
+
+        @include max(768){
+            font-size: 30px;
+        } @include max(600){
+            font-size: 24px;
+        }
+
+    }
+    
+}

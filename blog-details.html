@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><base href="/">
+    <title>Canny-Vision</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap">
+    <!--this file no need in production css/style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--this file no need in production css/style.css-->
+
+    <script src="js/script.js"   type="module" ></script>
+  </head>
+  <body> 
+    
+    <div class="blog-page">
+      <div class="hero__nav py-4 position-relative">
+        <div class="container"> 
+          <div class="d-flex align-items-center position-relative z-3 hero__nav--wrapnav"><a class="me-auto" href="#"><img src="/images/canny-logo.svg"></a>
+            <ul class="d-flex align-items-center hero__nav__list">
+              <li> <a class="grey-72 roboto-font size-16 fw-medium Home-Link active" href="#Home-Link">Home</a></li>
+              <li> <a class="grey-72 roboto-font size-16 fw-medium About-Link " href="#About-Link">About us</a></li>
+              <li> <a class="grey-72 roboto-font size-16 fw-medium Product-Link " href="#Product-Link">Our Product</a></li>
+              <li> <a class="grey-72 roboto-font size-16 fw-medium Expertise-Link " href="#Expertise-Link">Our Expertise</a></li>
+              <li> <a class="grey-72 roboto-font size-16 fw-medium Industries-Link " href="#Industries-Link">Industries</a></li>
+              <li> <a class="grey-72 roboto-font size-16 fw-medium Choose-Link " href="#Choose-Link">Why Choose Us</a></li>
+              <li class="hero__nav__list--mode">
+                <button class="switch-mode btn"></button>
+                <div class="switch-mode__list">
+                  <ul> 
+                    <li> 
+                      <button class="switch-mode__list--auto" type="button"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.348 0H0.651225C0.291062 0 0 0.291052 0 0.651225V15.4323C0 15.7925 0.291052 16.0835 0.651225 16.0835H11.3472V16.6204L7.73642 17.5228C7.3869 17.6105 7.17559 17.9641 7.26197 18.3122C7.3364 18.6086 7.60087 18.8053 7.89326 18.8053C7.94509 18.8053 7.99825 18.7987 8.05141 18.7854L11.9973 17.7993L15.9433 18.7854C15.9964 18.7987 16.0496 18.8053 16.1014 18.8053C16.3938 18.8053 16.6583 18.6073 16.7327 18.3122C16.8204 17.9627 16.6078 17.6092 16.2583 17.5228L12.6475 16.6204V16.0835H23.3435C23.7036 16.0835 23.9947 15.7925 23.9947 15.4323L24 0.651225C24 0.291062 23.709 0 23.3488 0H23.348ZM1.30378 1.30242H22.6968V12.094H1.30378V1.30242ZM22.6968 14.7811H1.30378V13.3963H22.6968V14.7811Z" fill="white"/>
+</svg><span>Auto Mode</span>
+                      </button>
+                    </li>
+                    <li> 
+                      <button class="switch-mode__list--light" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.0001 18.0002C15.3139 18.0002 18.0002 15.3139 18.0002 12.0001C18.0002 8.68635 15.3139 6 12.0001 6C8.68635 6 6 8.68635 6 12.0001C6 15.3139 8.68635 18.0002 12.0001 18.0002Z" fill="white"/>
+<path d="M5.15723 6.9597C5.39723 7.19971 5.75724 7.19971 6.11725 7.19971C6.47725 7.19971 6.71726 7.19971 6.95726 6.9597C7.43727 6.47969 7.43727 5.75968 6.95726 5.27967L5.15723 3.47964C4.67722 2.99963 3.9572 2.99963 3.47719 3.47964C2.99719 3.95965 2.99719 4.67966 3.47719 5.15967L5.15723 6.9597Z" fill="white"/>
+<path d="M4.8001 11.9998C4.8001 11.2798 4.32009 10.7998 3.60007 10.7998H1.20002C0.480009 10.7998 0 11.2798 0 11.9998C0 12.7198 0.480009 13.1999 1.20002 13.1999H3.60007C4.32009 13.1999 4.8001 12.7198 4.8001 11.9998Z" fill="white"/>
+<path d="M5.15723 17.0407L3.47719 18.7208C2.99719 19.2008 2.99719 19.9208 3.47719 20.4008C3.7172 20.6408 4.07721 20.7608 4.31721 20.7608C4.55722 20.7608 4.91722 20.6408 5.15723 20.4008L6.83726 18.7208C7.31727 18.2407 7.31727 17.5207 6.83726 17.0407C6.35725 16.5607 5.63724 16.6807 5.15723 17.0407Z" fill="white"/>
+<path d="M12.0008 19.2007C11.2808 19.2007 10.8008 19.6807 10.8008 20.4007V22.8008C10.8008 23.5208 11.2808 24.0008 12.0008 24.0008C12.7208 24.0008 13.2008 23.5208 13.2008 22.8008V20.4007C13.2008 19.6807 12.7208 19.2007 12.0008 19.2007Z" fill="white"/>
+<path d="M18.8447 17.0407C18.3647 16.5607 17.6447 16.5607 17.1647 17.0407C16.6847 17.5207 16.6847 18.2407 17.1647 18.7207L18.8447 20.4007C19.0847 20.6407 19.4447 20.7607 19.6847 20.7607C19.9247 20.7607 20.2848 20.6407 20.5248 20.4007C21.0048 19.9207 21.0048 19.2007 20.5248 18.7207L18.8447 17.0407Z" fill="white"/>
+<path d="M22.8032 10.7998H20.4031C19.6831 10.7998 19.2031 11.2798 19.2031 11.9998C19.2031 12.7198 19.6831 13.1999 20.4031 13.1999H22.8032C23.5232 13.1999 24.0032 12.7198 24.0032 11.9998C24.0032 11.2798 23.5232 10.7998 22.8032 10.7998Z" fill="white"/>
+<path d="M17.8797 7.19971C18.2397 7.19971 18.4797 7.07971 18.7197 6.8397L20.3998 5.15967C20.8798 4.67966 20.8798 3.95965 20.3998 3.47964C19.9198 2.99963 19.1997 2.99963 18.7197 3.47964L17.0397 5.15967C16.5597 5.63968 16.5597 6.35969 17.0397 6.8397C17.2797 7.19971 17.6397 7.19971 17.8797 7.19971Z" fill="white"/>
+<path d="M12.0008 4.8001C12.7208 4.8001 13.2008 4.32009 13.2008 3.60007V1.20002C13.2008 0.480009 12.7208 0 12.0008 0C11.2808 0 10.8008 0.480009 10.8008 1.20002V3.60007C10.8008 4.32009 11.2808 4.8001 12.0008 4.8001Z" fill="white"/>
+</svg><span>Light Mode </span>
+                      </button>
+                      <li> 
+                        <button class="switch-mode__list--drk" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.1038 15.8033C18.8497 17.7294 13.7735 16.8144 10.4794 13.5202C7.18526 10.2261 6.27023 5.14993 8.2023 0.901778C8.3103 0.658769 8.2593 0.373759 8.06729 0.190752C7.88429 -0.00125494 7.59628 -0.0522568 7.35627 0.0557472C5.96422 0.68577 4.72217 1.5438 3.67513 2.59984C1.30505 4.96693 0 8.11704 0 11.4682C0 14.8133 1.30505 17.9604 3.67513 20.3335C6.04222 22.6976 9.18933 24.0026 12.5405 24.0026C15.8856 24.0026 19.0327 22.6976 21.4058 20.3335C22.4558 19.2774 23.3138 18.0384 23.9439 16.6434C24.0519 16.4003 24.0009 16.1213 23.8179 15.9323C23.6259 15.7463 23.3469 15.6893 23.1038 15.8033Z" fill="white"/>
+</svg><span>Dark Mode</span>
+                        </button>
+                      </li>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="hamburgMenu"> <span> </span><span> </span><span></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-section"> 
+        <div class="container"> <a class="blog-section__redirect d-block" href="index.html"><svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.03037 0.719663C8.17097 0.860336 8.24996 1.05109 8.24996 1.24998C8.24996 1.44888 8.17097 1.63963 8.03037 1.7803L2.56064 7.24998L17.25 7.24998C17.4489 7.24998 17.6397 7.329 17.7803 7.46965C17.921 7.6103 18 7.80107 18 7.99998C18 8.19889 17.921 8.38966 17.7803 8.53031C17.6397 8.67096 17.4489 8.74998 17.25 8.74998L2.56064 8.74998L8.03037 14.2197C8.10001 14.2893 8.15525 14.372 8.19294 14.463C8.23063 14.554 8.25002 14.6515 8.25002 14.75C8.25001 14.8485 8.23061 14.946 8.19291 15.037C8.15522 15.128 8.09997 15.2107 8.03032 15.2803C7.96067 15.35 7.87799 15.4052 7.78699 15.4429C7.69599 15.4806 7.59846 15.5 7.49997 15.5C7.40147 15.5 7.30395 15.4806 7.21295 15.4429C7.12196 15.4052 7.03928 15.3499 6.96964 15.2803L0.219636 8.5303C0.217187 8.52787 0.215173 8.52517 0.212769 8.5227C0.197957 8.5075 0.183587 8.49189 0.170106 8.47551C0.162576 8.46635 0.156006 8.45665 0.14898 8.44722C0.141381 8.43705 0.133485 8.42707 0.126386 8.4165C0.119085 8.40561 0.112745 8.39425 0.106062 8.38304C0.100225 8.37324 0.0940681 8.36367 0.0886437 8.35356C0.082624 8.3423 0.077497 8.33067 0.0720727 8.31918C0.0670102 8.30847 0.061681 8.29794 0.0571267 8.287C0.0525489 8.27592 0.0488413 8.26457 0.0448128 8.25331C0.0405556 8.24149 0.0360245 8.22978 0.0323617 8.21769C0.0289745 8.20648 0.0264796 8.19508 0.0236184 8.18373C0.0205059 8.17137 0.0170265 8.1591 0.0145318 8.14651C0.0119452 8.13342 0.0103891 8.12023 0.00851219 8.10709C0.0069325 8.09602 0.00482736 8.08517 0.00373142 8.074C0.00130611 8.04937 6.53511e-07 8.0247 6.55672e-07 7.99998C6.57833e-07 7.97526 0.00130612 7.95059 0.00373144 7.92596C0.00483019 7.91479 0.00693533 7.90394 0.00851221 7.89287C0.0103872 7.87973 0.0119452 7.86655 0.0145318 7.85345C0.0170265 7.84086 0.0205059 7.8286 0.0236184 7.81623C0.0264797 7.80488 0.0289745 7.79348 0.0323617 7.78227C0.0360245 7.77018 0.0405557 7.75846 0.0448129 7.74665C0.0488441 7.73539 0.0525489 7.72404 0.0571267 7.71296C0.0616811 7.70202 0.067014 7.69149 0.0720727 7.68078C0.0774971 7.66929 0.0826241 7.65766 0.0886438 7.6464C0.0940681 7.63629 0.100225 7.62672 0.106062 7.61692C0.112745 7.60571 0.119085 7.59436 0.126386 7.58346C0.133482 7.57289 0.141379 7.56291 0.14898 7.55275C0.156011 7.54332 0.162574 7.53361 0.170106 7.52446C0.183816 7.50775 0.198442 7.49186 0.213547 7.47639C0.215677 7.47423 0.217462 7.47181 0.219636 7.46966L6.96964 0.719663C7.03928 0.650012 7.12197 0.594761 7.21297 0.557066C7.30397 0.519372 7.4015 0.49997 7.5 0.49997C7.5985 0.49997 7.69603 0.519372 7.78703 0.557067C7.87804 0.594761 7.96072 0.650012 8.03037 0.719663Z" fill="#B5B5BD"/>
+</svg></a>
+          <h2 class="size-40 fw-bold mt-4 blog-section--heading">There are many variations of passages of Lorem Ipsum</h2>
+          <p class="size-18 mt-4 blog-section--txt">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+          <div class="blog-section__author pt-5">
+            <h4 class="size-17 mb-3">AUTHORS</h4>
+            <div class="d-flex align-items-center"><img src="/images/author.png">
+              <div class="ms-3">
+                <p class="size-17">Louis Murerwa</p>
+                <p class="size-12 fw-light">CTO  and Co-Founder</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="size-40 fw-semibold mt-5 blog-section--heading">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</h2>
+          <p class="size-18 mt-3 blog-section--txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <div class="d-flex justify-content-between py-5 ">
+            <div class="row flex-md-row flex-column">
+              <div class="col-lg-6 col-10 mx-auto mb-lg-0 mb-2"><img class="w-100" src="/images/blog-detail-1.png"></div>
+              <div class="col-lg-6 col-10 mx-auto"><img class="w-100" src="/images/blog-detail-2.png"></div>
+            </div>
+          </div>
+          <h2 class="size-40 fw-semibold mt-5 blog-section--heading">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</h2>
+          <p class="size-18 my-5 blog-section--txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p class="size-18 blog-section--txt">
+             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+          <div class="mt-5">
+            <h2 class="size-40 fw-semibold mb-2 blog-section--heading">There are many variations of passages of Lorem Ipsum</h2>
+            <p class="size-18 blog-section--txt">
+               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
+          </div>
+          <div class="mt-5">
+            <h2 class="size-40 fw-semibold mb-2 blog-section--heading">Many desktop publishing packages and web page</h2>
+            <p class="size-18 blog-section--txt">
+               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.</p>
+          </div>
+          <div class="blog-section__bookAcall mt-5 ps-md-5 ps-0">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-10 mx-auto mb-md-0 mb-3">
+                <h3 class="size-40 fw-semibold mb-2 text-white">Many desktop publishing packages web page editors Lorem Ipsum.</h3>
+              </div>
+              <div class="col-md-4 col-10 mx-auto">
+                <button class="text-white ms-md-auto mx-auto mx-md-0 d-block">Book a call</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer mt-5">
+        <p class="text-white">&copy; <span class="weight-700"><span class="currentYear"></span> Canny Vision - </span><span class="weight-400">All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </body>
+</html>

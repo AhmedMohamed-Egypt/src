@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><base href="/">
+    <title>Canny-Vision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap">
+    <script type="module"  src="js/script.js"   ></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body> 
+    <div class="home-page">
+      <div class="hero bg-cover bg-center position-relative" id="Home-Link"><video playsinline  autoplay muted loop id="myVideo"> <source src="/images/landing-page-video-canny-vision.mp4" type="video/mp4"></video>
+        <div class="hero__nav py-4 position-relative">
+          <div class="container"> 
+            <div class="d-flex align-items-center position-relative z-3 hero__nav--wrapnav"><a class="me-auto" href="#"><img src="/images/canny-logo.svg"></a>
+              <ul class="d-flex align-items-center hero__nav__list">
+                <li> <a class="grey-72 roboto-font size-16 fw-medium Home-Link active" href="#Home-Link">Home</a></li>
+                <li> <a class="grey-72 roboto-font size-16 fw-medium About-Link " href="#About-Link">About us</a></li>
+                <li> <a class="grey-72 roboto-font size-16 fw-medium Product-Link " href="#Product-Link">Our Product</a></li>
+                <li> <a class="grey-72 roboto-font size-16 fw-medium Expertise-Link " href="#Expertise-Link">Our Expertise</a></li>
+                <li> <a class="grey-72 roboto-font size-16 fw-medium Industries-Link " href="#Industries-Link">Industries</a></li>
+                <li> <a class="grey-72 roboto-font size-16 fw-medium Choose-Link " href="#Choose-Link">Why Choose Us</a></li>
+                <li class="hero__nav__list--mode">
+                  <button class="switch-mode btn"></button>
+                  <div class="switch-mode__list">
+                    <ul> 
+                      <li> 
+                        <button class="switch-mode__list--auto" type="button"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.348 0H0.651225C0.291062 0 0 0.291052 0 0.651225V15.4323C0 15.7925 0.291052 16.0835 0.651225 16.0835H11.3472V16.6204L7.73642 17.5228C7.3869 17.6105 7.17559 17.9641 7.26197 18.3122C7.3364 18.6086 7.60087 18.8053 7.89326 18.8053C7.94509 18.8053 7.99825 18.7987 8.05141 18.7854L11.9973 17.7993L15.9433 18.7854C15.9964 18.7987 16.0496 18.8053 16.1014 18.8053C16.3938 18.8053 16.6583 18.6073 16.7327 18.3122C16.8204 17.9627 16.6078 17.6092 16.2583 17.5228L12.6475 16.6204V16.0835H23.3435C23.7036 16.0835 23.9947 15.7925 23.9947 15.4323L24 0.651225C24 0.291062 23.709 0 23.3488 0H23.348ZM1.30378 1.30242H22.6968V12.094H1.30378V1.30242ZM22.6968 14.7811H1.30378V13.3963H22.6968V14.7811Z" fill="white"/>
+</svg><span>Auto Mode</span>
+                        </button>
+                      </li>
+                      <li> 
+                        <button class="switch-mode__list--light" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.0001 18.0002C15.3139 18.0002 18.0002 15.3139 18.0002 12.0001C18.0002 8.68635 15.3139 6 12.0001 6C8.68635 6 6 8.68635 6 12.0001C6 15.3139 8.68635 18.0002 12.0001 18.0002Z" fill="white"/>
+<path d="M5.15723 6.9597C5.39723 7.19971 5.75724 7.19971 6.11725 7.19971C6.47725 7.19971 6.71726 7.19971 6.95726 6.9597C7.43727 6.47969 7.43727 5.75968 6.95726 5.27967L5.15723 3.47964C4.67722 2.99963 3.9572 2.99963 3.47719 3.47964C2.99719 3.95965 2.99719 4.67966 3.47719 5.15967L5.15723 6.9597Z" fill="white"/>
+<path d="M4.8001 11.9998C4.8001 11.2798 4.32009 10.7998 3.60007 10.7998H1.20002C0.480009 10.7998 0 11.2798 0 11.9998C0 12.7198 0.480009 13.1999 1.20002 13.1999H3.60007C4.32009 13.1999 4.8001 12.7198 4.8001 11.9998Z" fill="white"/>
+<path d="M5.15723 17.0407L3.47719 18.7208C2.99719 19.2008 2.99719 19.9208 3.47719 20.4008C3.7172 20.6408 4.07721 20.7608 4.31721 20.7608C4.55722 20.7608 4.91722 20.6408 5.15723 20.4008L6.83726 18.7208C7.31727 18.2407 7.31727 17.5207 6.83726 17.0407C6.35725 16.5607 5.63724 16.6807 5.15723 17.0407Z" fill="white"/>
+<path d="M12.0008 19.2007C11.2808 19.2007 10.8008 19.6807 10.8008 20.4007V22.8008C10.8008 23.5208 11.2808 24.0008 12.0008 24.0008C12.7208 24.0008 13.2008 23.5208 13.2008 22.8008V20.4007C13.2008 19.6807 12.7208 19.2007 12.0008 19.2007Z" fill="white"/>
+<path d="M18.8447 17.0407C18.3647 16.5607 17.6447 16.5607 17.1647 17.0407C16.6847 17.5207 16.6847 18.2407 17.1647 18.7207L18.8447 20.4007C19.0847 20.6407 19.4447 20.7607 19.6847 20.7607C19.9247 20.7607 20.2848 20.6407 20.5248 20.4007C21.0048 19.9207 21.0048 19.2007 20.5248 18.7207L18.8447 17.0407Z" fill="white"/>
+<path d="M22.8032 10.7998H20.4031C19.6831 10.7998 19.2031 11.2798 19.2031 11.9998C19.2031 12.7198 19.6831 13.1999 20.4031 13.1999H22.8032C23.5232 13.1999 24.0032 12.7198 24.0032 11.9998C24.0032 11.2798 23.5232 10.7998 22.8032 10.7998Z" fill="white"/>
+<path d="M17.8797 7.19971C18.2397 7.19971 18.4797 7.07971 18.7197 6.8397L20.3998 5.15967C20.8798 4.67966 20.8798 3.95965 20.3998 3.47964C19.9198 2.99963 19.1997 2.99963 18.7197 3.47964L17.0397 5.15967C16.5597 5.63968 16.5597 6.35969 17.0397 6.8397C17.2797 7.19971 17.6397 7.19971 17.8797 7.19971Z" fill="white"/>
+<path d="M12.0008 4.8001C12.7208 4.8001 13.2008 4.32009 13.2008 3.60007V1.20002C13.2008 0.480009 12.7208 0 12.0008 0C11.2808 0 10.8008 0.480009 10.8008 1.20002V3.60007C10.8008 4.32009 11.2808 4.8001 12.0008 4.8001Z" fill="white"/>
+</svg><span>Light Mode </span>
+                        </button>
+                        <li> 
+                          <button class="switch-mode__list--drk" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.1038 15.8033C18.8497 17.7294 13.7735 16.8144 10.4794 13.5202C7.18526 10.2261 6.27023 5.14993 8.2023 0.901778C8.3103 0.658769 8.2593 0.373759 8.06729 0.190752C7.88429 -0.00125494 7.59628 -0.0522568 7.35627 0.0557472C5.96422 0.68577 4.72217 1.5438 3.67513 2.59984C1.30505 4.96693 0 8.11704 0 11.4682C0 14.8133 1.30505 17.9604 3.67513 20.3335C6.04222 22.6976 9.18933 24.0026 12.5405 24.0026C15.8856 24.0026 19.0327 22.6976 21.4058 20.3335C22.4558 19.2774 23.3138 18.0384 23.9439 16.6434C24.0519 16.4003 24.0009 16.1213 23.8179 15.9323C23.6259 15.7463 23.3469 15.6893 23.1038 15.8033Z" fill="white"/>
+</svg><span>Dark Mode</span>
+                          </button>
+                        </li>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="hamburgMenu"> <span> </span><span> </span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero_content position-relative">
+          <div class="container">
+            <h1 class="size-60 fw-bold text-white hero_content__mainheading fadeInUp" >Cutting-Edge Cognitive Vision and Video Analytics Solutions for <span class="red-37">Canadian</span> <span class="yellow">Businesses</span></h1>
+            <button class=" text-white learnBtn mt-5">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-product-about">
+        <div class="overlay-product-about--pesdu"></div>
+        <div class="about-section pt-5" id="About-Link" data-target="About-Link">
+          <div class="container"> 
+            <div class="about-section__widget position-relative overflow-hidden">
+              <div class="about-section__widget--before"></div>
+              <div>
+                <h2 class="mb-4 h2-heading text-white position-relative z-3" data-aos="fade" data-aos-duration="2000">About Us </h2>
+                <div class="col-lg-6 about-section__widget--txt">
+                  <p class="mb-4 size-18  fw-lighter text-white position-relative z-3" data-aos="fade-up" data-aos-duration="1500"><b>Canny Vision</b> is a Canadian startup delivering <b>customizable AI solutions</b> in motion detection, object classification, behavior tracking, <b>incident detection, and traffic monitoring</b>. With a strong commitment to <b>quality, privacy, and security</b>, our team of experts harnesses the latest advancements in <b>Cognitive Vision and Video Analytics</b> to provide reliable, scalable solutions across key industries.</p>
+                  <p class="size-18  fw-lighter text-white position-relative z-3" data-aos="fade-up" data-aos-duration="1500">Focused exclusively on the Canadian market, Canny Vision stands at the forefront of video analytics technology, helping organizations elevate their security, efficiency, and intelligence.</p>
+                  <!--data-aos="fade-up"   data-aos-duration="3000"-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-section" id="Product-Link" data-target="Product-Link">
+          <div class="container"> 
+            <div class="row align-items-center">
+              <div class="col-xl-6">
+                <div class="product-section--txt pe-3 position-relative z-3">
+                  <h2 class="h2-heading mb-3" data-aos="fade" data-aos-duration="2000">Our Product </h2>
+                  <p class=" fw-light size-22" data-aos="fade-up" data-aos-duration="1500">Customizable, Cutting-Edge Solutions Quality, Privacy, and Security Each solution is designed to integrate seamlessly into your existing infrastructure and tailored to meet the specific needs of your organization.</p>
+                  <p class=" fw-light size-22 mt-3" data-aos="fade-up" data-aos-duration="1500">We prioritize data privacy and security, ensuring all solutions comply with Canadian standards and regulations.</p>
+                </div>
+              </div>
+              <div class="col-xl-6"><img class="w-100 mw-100 mx-auto m-xl-0 d-block mt-5" src="./images/product.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--expertise-traffic.png-->
+      <div class="expertise no-m-p" id="Expertise-Link" data-target="Expertise-Link">
+        <div class="container-3"> 
+          <h2 class="h2-heading text-center" data-aos="fade" data-aos-duration="2000">Our Expertise </h2>
+          <p class="ft-normal size-18 text-center" data-aos="fade-up" data-aos-duration="1500">Innovative VideoAnalytics Solutions</p>
+          <div class="expertise__slider mt-5">
+            <div class="swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="expertise__card motion"><span class="expertise__card--before d-block"></span>
+                    <div class="expertise__content"> 
+                      <div class="col-6">
+                        <h2 class="text-white position-relative z-3 size-45 mb-3">Motion Detection</h2>
+                      </div>
+                      <div class="col-xl-6 col-lg-5 col-md-6 expertise__card--txt">
+                        <p class="fw-lighter text-white position-relative z-3 size-17">Capture and analyze movement patterns for enhanced security and automation.</p>
+                      </div>
+                    </div><span class="expertise__card--after d-block"></span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="expertise__card object"><span class="expertise__card--before d-block"></span>
+                    <div class="expertise__content"> 
+                      <div class="col-6">
+                        <h2 class="text-white position-relative z-3 size-45 mb-3">Object Classification</h2>
+                      </div>
+                      <div class="col-xl-6 col-lg-5 col-md-6 expertise__card--txt">
+                        <p class="fw-lighter text-white position-relative z-3 size-17">Identify and classify objects with precision, enabling actionable insights across various applications.</p>
+                      </div>
+                    </div><span class="expertise__card--after d-block"></span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="expertise__card track"><span class="expertise__card--before d-block"></span>
+                    <div class="expertise__content"> 
+                      <div class="col-6">
+                        <h2 class="text-white position-relative z-3 size-45 mb-3">Behavior Tracking</h2>
+                      </div>
+                      <div class="col-xl-6 col-lg-5 col-md-6 expertise__card--txt">
+                        <p class="fw-lighter text-white position-relative z-3 size-17">Track behaviors to enhance understanding of patterns and identify anomalies.</p>
+                      </div>
+                    </div><span class="expertise__card--after d-block"></span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="expertise__card incident"><span class="expertise__card--before d-block"></span>
+                    <div class="expertise__content"> 
+                      <div class="col-6">
+                        <h2 class="text-white position-relative z-3 size-45 mb-3">Incident Detection</h2>
+                      </div>
+                      <div class="col-xl-6 col-lg-5 col-md-6 expertise__card--txt">
+                        <p class="fw-lighter text-white position-relative z-3 size-17">Detect real-time incidents to support immediate action and improve situational awareness.</p>
+                      </div>
+                    </div><span class="expertise__card--after d-block"></span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="expertise__card traffic"><span class="expertise__card--before d-block"></span>
+                    <div class="expertise__content"> 
+                      <div class="col-6">
+                        <h2 class="text-white position-relative z-3 size-45 mb-3">Traffic Monitoring</h2>
+                      </div>
+                      <div class="col-xl-6 col-lg-5 col-md-6 expertise__card--txt">
+                        <p class="fw-lighter text-white position-relative z-3 size-17">Optimize traffic flow and safety with advanced monitoring and real-time analytics..</p>
+                      </div>
+                    </div><span class="expertise__card--after d-block"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!--
+          .glide
+           .glide__track(data-glide-el='track')
+             div.glide__slides
+              each val in cards  
+               div.glide__slide
+                div(class=`expertise__card ${val.class}`)
+                 span.expertise__card--before.d-block
+                 .expertise__content 
+                  .col-6
+                   h2(class="text-white position-relative z-3 size-45 mb-3")=val.title 
+                  .col-lg-7.col-12.expertise__card--txt
+                   p(class="fw-lighter text-white position-relative z-3 size-17")=val.text
+                 span.expertise__card--after.d-block
+               
+           .glide
+             .glide__arrows(data-glide-el='controls')
+               button.glide__arrow.glide__arrow--prev(data-glide-dir='<') 
+               button.glide__arrow.glide__arrow--next(data-glide-dir='>') 
+             .glide__bullets(data-glide-el='controls[nav]')
+               button.glide__bullet(data-glide-dir='=0')
+               button.glide__bullet(data-glide-dir='=1')
+               button.glide__bullet(data-glide-dir='=2')
+          
+          
+          -->
+        </div>
+      </div>
+      <!--.swiper.swiper-container
+        .swiper-wrapper
+         each val in cards  
+          .swiper-slide
+           .expertise__card
+            .expertise__content 
+             .col-6
+              h2(class="text-white position-relative z-3 size-45 mb-3")=val.title 
+             .col-7.expertise__card--txt
+              p(class="fw-lighter text-white position-relative z-3 size-17")=val.text
+            
+      .swiper-pagination
+        .swiper-button-prev
+        .swiper-button-next
+      -->
+      <div class="industries no-m-p" id="Industries-Link" data-target="Industries-Link">
+        <div class="container"> 
+          <div class="industries__cards"> 
+            <h2 class="h2-heading text-center mb-3" data-aos="fade" data-aos-duration="2000">Industries</h2>
+            <div class="col-xl-5 col-md-8 col-11 mx-auto mb-5">
+              <p class="ft-normal size-18 text-center" data-aos="fade-up" data-aos-duration="1500">Our solutions are tailored to meet the unique needs of diverse sectors, ensuring that each industry benefits from our specialized approach to video analytics:</p>
+            </div>
+            <div class="industries__cards--card">
+              <div class="row">
+                <div class=" col-md-4 col-10 mx-auto mx-md-0" data-aos="slide-up" data-aos-duration="300">
+                  <svg class="svg position-absolute">
+                    <clippath id="my-clip-path" clippathunits="objectBoundingBox">
+                      <path d="M0.842,0 H0.076 C0.034,0,0,0.048,0,0.107 V0.893 C0,0.952,0.034,1,0.076,1 H0.924 C0.966,1,1,0.952,1,0.893 V0.2 C1,0.167,0.989,0.136,0.971,0.116 L0.889,0.023 C0.875,0.008,0.859,0,0.842,0"></path>
+                    </clippath>
+                    <div class="clipped red">
+                      <div class="col-10 mx-auto">
+                        <div class="d-flex align-items-center mb-3"><span class="icon d-block"></span>
+                          <h2 class="size-25 ">Government and Defense</h2>
+                        </div>
+                        <p class="size-18">Strengthen public safety, secure sensitive facilities, and enhance surveillance capabilities with AI-powered solutions designed for high-security environments.</p>
+                      </div>
+                    </div>
+                  </svg>
+                </div>
+                <div class=" col-md-4 col-10 mx-auto mx-md-0" data-aos="slide-up" data-aos-duration="1200">
+                  <svg class="svg position-absolute">
+                    <clippath id="my-clip-path" clippathunits="objectBoundingBox">
+                      <path d="M0.842,0 H0.076 C0.034,0,0,0.048,0,0.107 V0.893 C0,0.952,0.034,1,0.076,1 H0.924 C0.966,1,1,0.952,1,0.893 V0.2 C1,0.167,0.989,0.136,0.971,0.116 L0.889,0.023 C0.875,0.008,0.859,0,0.842,0"></path>
+                    </clippath>
+                    <div class="clipped orange">
+                      <div class="col-10 mx-auto">
+                        <div class="d-flex align-items-center mb-3"><span class="icon d-block"></span>
+                          <h2 class="size-25 ">Retail</h2>
+                        </div>
+                        <p class="size-18">Improve store security, understand customer behavior, and drive operational efficiency with real-time insights and advanced analytics</p>
+                      </div>
+                    </div>
+                  </svg>
+                </div>
+                <div class=" col-md-4 col-10 mx-auto mx-md-0" data-aos="slide-up" data-aos-duration="2000">
+                  <svg class="svg position-absolute">
+                    <clippath id="my-clip-path" clippathunits="objectBoundingBox">
+                      <path d="M0.842,0 H0.076 C0.034,0,0,0.048,0,0.107 V0.893 C0,0.952,0.034,1,0.076,1 H0.924 C0.966,1,1,0.952,1,0.893 V0.2 C1,0.167,0.989,0.136,0.971,0.116 L0.889,0.023 C0.875,0.008,0.859,0,0.842,0"></path>
+                    </clippath>
+                    <div class="clipped green">
+                      <div class="col-10 mx-auto">
+                        <div class="d-flex align-items-center mb-3"><span class="icon d-block"></span>
+                          <h2 class="size-25 ">Transportation and Logistics</h2>
+                        </div>
+                        <p class="size-18">Monitor traffic flow, ensure road safety, and optimize logistical operations with datadriven traffic management and incident detection.</p>
+                      </div>
+                    </div>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="choose no-m-p" id="Choose-Link" data-target="Choose-Link">
+        <h2 class="h2-heading text-center mb-5" data-aos="fade" data-aos-duration="2000">Why Choose Canny Vision?</h2>
+        <div class="container"> 
+          <div class="choose__cards mt-5 pt-5">
+            <div class="row"> 
+              <div class="col-lg-6 mb-5" data-aos="slide-up" data-aos-duration="500">
+                <div class="choose__cards--card">
+                  <div class="col-xl-7 mb-xl-5 mb-2">
+                    <h2 class="size-48 text-white position-relative z-3">Customizable, Cutting-Edge Solutions</h2>
+                  </div>
+                  <div class="col-xl-8 col-10">
+                    <p class="size-18 fw-lighter text-white position-relative z-3">Each solution is designed to integrate seamlessly into your existing infrastructure and tailored to meet the specific needs of your organization.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-5" data-aos="slide-up" data-aos-duration="1200">
+                <div class="choose__cards--card">
+                  <div class="col-xl-7 mb-xl-5 mb-2">
+                    <h2 class="size-48 text-white position-relative z-3">Quality, Privacy, and Security</h2>
+                  </div>
+                  <div class="col-xl-8 col-10">
+                    <p class="size-18 fw-lighter text-white position-relative z-3">We prioritize data privacy and security, ensuring all solutions comply with Canadian standards and regulations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-5" data-aos="slide-up" data-aos-duration="1500">
+                <div class="choose__cards--card">
+                  <div class="col-xl-7 mb-xl-5 mb-2">
+                    <h2 class="size-48 text-white position-relative z-3">Canadian Market Focus</h2>
+                  </div>
+                  <div class="col-xl-8 col-10">
+                    <p class="size-18 fw-lighter text-white position-relative z-3">As a Canadian company, we understand the unique challenges and opportunities in Canada’s regulatory landscape and local industries.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-5" data-aos="slide-up" data-aos-duration="2000">
+                <div class="choose__cards--card">
+                  <div class="col-xl-7 mb-xl-5 mb-2">
+                    <h2 class="size-48 text-white position-relative z-3">Core Expertise in Cognitive Vision</h2>
+                  </div>
+                  <div class="col-xl-8 col-10">
+                    <p class="size-18 fw-lighter text-white position-relative z-3">With deep expertise in Cognitive Vision, we deliver intelligent systems that don’t just monitor—they understand and learn from complex visual environments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--data-aos="slide-up" data-aos-duration=`${val.dataos}`-->
+      <!--data-aos="slide-up" data-aos-duration=`${val.dataos}`-->
+      <div class="latestBlog no-m-p">
+        <div class="container-non">
+          <h2 class="h2-heading text-center mb-xl-5" data-aos="fade" data-aos-duration="2000">Our Latest Blog </h2>
+          <div class="latestBlog__swiper mb-lg-5" data-aos="slide-up" data-aos-duration="1500">
+            <div class="swiper swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-1.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-2.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-3.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-4.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-5.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-6.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-7.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="latestBlog__swiper--card"><img class="position-relative w-100" src="images/blog-8.png">
+                    <div class="latestBlog__swiper--card--body">
+                      <div class="d-flex align-items-center mb-1"><svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.1372 2.43794V0.742396C3.1372 0.371498 3.42862 0.0800781 3.79952 0.0800781C4.17042 0.0800781 4.46184 0.371498 4.46184 0.742396V2.43794C4.46184 2.80883 4.17042 3.10025 3.79952 3.10025C3.42862 3.10025 3.1372 2.80883 3.1372 2.43794ZM8.03835 3.10025C8.40925 3.10025 8.70067 2.80883 8.70067 2.43794V0.742396C8.70067 0.371498 8.40925 0.0800781 8.03835 0.0800781C7.66745 0.0800781 7.37604 0.371498 7.37604 0.742396V2.43794C7.37604 2.80883 7.66745 3.10025 8.03835 3.10025ZM3.56109 5.37862H8.26354C8.55496 5.37862 8.7934 5.14018 8.7934 4.84876C8.7934 4.55734 8.55496 4.31891 8.26354 4.31891H3.56109C3.26967 4.31891 3.03123 4.55734 3.03123 4.84876C3.03123 5.14018 3.26967 5.37862 3.56109 5.37862ZM10.9525 1.00732H9.8531C9.56168 1.00732 9.32325 1.24576 9.32325 1.53718C9.32325 1.8286 9.56168 2.06703 9.8531 2.06703H10.4227V11.0745H1.41518V2.06703H1.98477C2.27619 2.06703 2.51462 1.8286 2.51462 1.53718C2.51462 1.24576 2.27619 1.00732 1.98477 1.00732H0.885323C0.593903 1.00732 0.355469 1.29873 0.355469 1.59015V11.6044C0.355469 11.8958 0.593903 12.1343 0.885323 12.1343H10.9525C11.244 12.1343 11.4824 11.8958 11.4824 11.6044V1.59015C11.4824 1.29873 11.244 1.00732 10.9525 1.00732ZM5.48181 2.06703H6.35606C6.64748 2.06703 6.88592 1.8286 6.88592 1.53718C6.88592 1.24576 6.64748 1.00732 6.35606 1.00732H5.48181C5.19039 1.00732 4.95195 1.24576 4.95195 1.53718C4.95195 1.8286 5.19039 2.06703 5.48181 2.06703ZM3.56109 7.76296H8.26354C8.55496 7.76296 8.7934 7.52453 8.7934 7.23311C8.7934 6.94169 8.55496 6.70325 8.26354 6.70325H3.56109C3.26967 6.70325 3.03123 6.94169 3.03123 7.23311C3.03123 7.52453 3.26967 7.76296 3.56109 7.76296Z" fill="white"/>
+</svg>
+                        <p class="text-white fw-normal size-17 ms-2">15 sep 2024</p>
+                      </div>
+                      <h2 class="w-500 size-16 text-white">Mauris ullamcorper tortor sed purus interdum, fermentum efficitur dictu.</h2><a class="d-flex align-items-center mt-2" href="blog-details.html"> <span class="w-500 size-16 text-white">Read More </span><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17773 10.3994H16.8208" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.2383 4.81836L16.8195 10.3996L11.2383 15.9809" stroke="white" stroke-width="1.24028" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ourlocations pb-5 position-relative">
+        <div class="container"> 
+          <h2 class="h2-heading text-center mb-5" data-aos="fade-up" data-aos-duration="2000"> Our Locations</h2>
+          <div class="ourlocations__container position-relative">
+            <div class="ourlocations__slider">
+              <div class="swiper swiper-container">
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> 
+                    <div class="ourlocations__container--info canda ">
+                      <div class="ourlocations__container--info--positioning">
+                        <h2 class="size-38 text-center">Tornto </h2>
+                        <p class="size-20 fw-bold">Phone: <span class="size-20 weight-200">+1 4379842129</span></p>
+                        <p class="size-20 fw-bold">Email:  <span class="size-20 weight-200">contacts@canny.vision</span></p>
+                        <p class="size-20 fw-bold">Address: <span class="size-20 weight-200">22 Close Ave M6K2V4 Toronto, Canada</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide"> 
+                    <div class="ourlocations__container--info tunis">
+                      <div class="ourlocations__container--info--positioning">
+                        <h2 class="size-38 text-center">Tunis</h2>
+                        <p class="size-20 fw-bold">Phone: <span class="size-20 weight-200">+1 437 984 2129</span></p>
+                        <p class="size-20 fw-bold">Email: <span class="size-20 weight-200">contacts@canny.vision</span></p>
+                        <p class="size-20 fw-bold">Address: <span class="size-20 weight-200">18 Rue Amine Abbessi, 1002 Tunis ,Tunisie</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="text-white">&copy; <span class="weight-700"><span class="currentYear"></span> Canny Vision - </span><span class="weight-400">All Rights Reserved
+            <!--    <iframe src="https://maps.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6745.393772135621!2d-79.43646922351334!3d43.634430653644266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35c6da9ab719%3A0x11bf8fd1db59ec36!2sCanny%20Vision!5e1!3m2!1sen!2sca!4v1731925529559!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--></span></p>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "threejs-journey-exercise",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "sass": " sass --watch scss/styles.scss:css/style.css",
+    "all": "npm-run-all --parallel dev sass"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7",
+    "sass": "^1.83.4",
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^5.3.3",
+    "swiper": "^11.2.1"
+  }
+}
